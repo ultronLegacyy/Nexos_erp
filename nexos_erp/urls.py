@@ -33,4 +33,10 @@ urlpatterns = [
     
     # Inventory
     path('api/inventory/', include('apps.inventory.urls')),
+    
+    # Customers
+    path('api/', include('apps.customers.urls')),
+    
+    # Sales & Invoicing
+    path('api/sales/', include('apps.sales.urls')),
 ]

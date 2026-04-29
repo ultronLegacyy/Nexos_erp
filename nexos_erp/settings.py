@@ -32,6 +32,8 @@ INSTALLED_APPS = [
     'apps.tenants',
     'apps.products',
     'apps.inventory',
+    'apps.customers',
+    'apps.sales',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +135,11 @@ SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 
 CORS_ALLOW_ALL_ORIGINS = True # Change to specific origins in production
+
+# Media files (user-uploaded content, generated PDFs)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+# Invoice PDF download link expiry (seconds)
+# Signed URLs expire after this period (default: 30 minutes)
+INVOICE_PDF_LINK_EXPIRY_SECONDS = 1800
