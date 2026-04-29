@@ -69,9 +69,9 @@ WSGI_APPLICATION = 'nexos_erp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Nexos_ERP',
+        'NAME': 'Nexos',
         'USER': 'postgres',
-        'PASSWORD': 'password',  # Placeholder: Should be in .env
+        'PASSWORD': '000OCHO',
         'HOST': 'localhost',
         'PORT': '5432',
     }
